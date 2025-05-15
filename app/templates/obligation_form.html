@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Obligation</title>
+</head>
+<body>
+    <h2>Add New Obligation</h2>
+    <form method="POST">
+        <label>Title:</label><br><input type="text" name="title"><br>
+        <label>Type:</label><br><input type="text" name="type"><br>
+        <label>Due Date:</label><br><input type="date" name="due_date" required><br>
+        <label>Assigned To:</label><br><input type="text" name="assigned_to"><br>
+        <label>Status:</label><br><select name="status">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select><br><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

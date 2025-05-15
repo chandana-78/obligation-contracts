@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Obligation Dashboard</h2>
+    <a href="/add">Add Obligation</a>
+    <table border="1">
+        <tr><th>ID</th><th>Title</th><th>Due Date</th><th>Status</th><th>Assigned To</th></tr>
+        {% for obligation in obligations %}
+        <tr>
+            <td>{{ obligation.id }}</td>
+            <td>{{ obligation.title }}</td>
+            <td>{{ obligation.due_date }}</td>
+            <td>{{ obligation.status }}</td>
+            <td>{{ obligation.assigned_to }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
